@@ -1,0 +1,265 @@
+/* 横のスクロールを無くす */
+html{
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #ebebeb;
+}
+
+/*firstBlock backgroundの設定*/
+#firstBlock{
+	background-image: url("../images/img_pc/bg_top_content.png");
+	background-repeat: no-repeat;
+}
+
+/*yahooへのリンク*/
+#firstBlock a{
+	color: white;
+	float: right;
+	margin: 30px 50px;
+	text-decoration: none;
+}
+
+#firstBlock a:hover {
+ 	text-decoration: underline;
+}
+
+/*
+h2{
+    color:white;
+	text-align: center; 
+	padding-top: 120px;
+	font-weight : normal;
+}
+
+p{
+    color:white;
+	text-align: center;
+	line-height: 20px;
+}
+
+*/
+
+#firstBlock img.title{
+	margin: 100px 0px 0px 150px;
+}
+
+/*
+#firstBlock img.appStore{
+	margin: 20px 530px 0px 0px;
+	width: 180px;
+	
+	float:none;
+}
+
+#firstBlock img.qrCode{
+	margin: -70px 0px 0px 450px;
+	
+}
+
+#firstBlock img.iPhone{
+	float: right;
+	margin: -470px 250px 0px 0px;
+}
+
+#secondBlock{
+	background-image: url("../images/img_pc/bg_img_01.jpg");
+	background-repeat: no-repeat;
+	width:100%;
+}
+
+img.smallIcon {
+	position: absolute;
+	top : 50px;
+	left : 450px;
+}
+
+#secondBlock.text{
+	margin:300px;
+}
+
+#thirdBlock {
+	position:relative;
+	width:1200px;
+	height:600px;
+}
+
+divScreens1{
+	display: inline-block;
+	position:absolute;
+	top:380px;
+	margin:0px 30px;
+	float:left;
+}
+
+.screens1 {
+    box-shadow: 2px 2px 2px 2px #CCC;
+	background-color: #EEE;
+	margin: 5px;
+}
+
+
+p.pinkText{
+	top:40px;
+	position: relative;
+	color: #f83571;
+	display: inline-block;
+	float:left;
+	padding:0px 65px;
+}
+
+
+p.greyText{
+	float:left;
+	margin:50px;
+	position: relative;
+	clear: both;
+	color: #666666;
+}
+
+#forthBlock{
+	background-image: url("../images/img_pc/bg_img_02.jpg");
+	background-repeat: no-repeat;
+	width:1000px;
+	height:510px;
+	top:200px;
+	position: relative;
+}
+
+#fithBlock{
+	background-image: url("../images/img_pc/bg_img_03.jpg");
+	background-repeat: no-repeat;
+	width:1000px;
+	height:610px;
+	top:450px;
+	position: relative;
+}
+
+divScreens2{
+	display: inline-block;
+	position:absolute;
+	top:365px;
+	width:1500px;
+	margin:0px 50px;
+}
+
+.screens2 {
+	box-shadow: 2px 2px 2px 2px #CCC;
+	background-color: #EEE;
+	margin:5px;
+	top:200px;
+}
+
+divScreens3{
+	display: inline-block;
+	position:absolute;
+	top:200px;
+	width:1500px;
+	margin:0px 50px;
+}
+
+.screens3 {
+	float: center;
+	padding:50px;
+}
+
+
+#sixthBlock{
+	width:1000px;
+	height:510px;
+	top:350px;
+	position: relative;
+}
+
+textBlock{
+	float:left;
+	margin:10px 40px;
+	width:250px;
+	position: relative;
+	color: #666666;
+}
+
+h2.greyText2{
+	color: grey;
+}
+p.greyText2{
+	color: grey;
+}
+
+#seventhBlock{
+	background-color:#0b9af4;
+	width:1000px;
+	height:326px;
+	top:350px;
+	position: relative;
+}
+
+#seventhBlock img.iPhone{
+	position:absolute;
+	top: -50px;
+	left: 100px;	
+}
+
+#seventhBlock img.text{
+	position:absolute;
+	top: 50px;
+	left: 450px;	
+}
+
+#seventhBlock img.appStore{
+	position:absolute;
+	top: 200px;
+	left: 480px;	
+}
+
+#seventhBlock img.qrCode{
+	position:absolute;
+	top : 190px;
+	left : 750px;
+}
+
+#footer{
+	background-color : #ebebeb;
+	height:400px;
+	position: relative;
+	top:400px;
+}
+
+#footer img.top{
+	position:absolute;
+	top:-100px;
+	left: 805px;
+}
+
+p.topText{
+	background-color: white;
+	width: 150px;
+	position:absolute;
+	top:-90px;
+	padding: 15px 0px 15px 20px;
+    left: 800px;
+}
+
+#footer a{
+    color: #0090ff;
+	text-decoration: none;
+}
+
+#footer a:hover {
+ 	text-decoration: underline;
+}
+
+ul{
+	color:#666666;
+	margin: 70px 50px;
+}
+
+hr{
+	margin:0px 50px;
+	color:#cdcdcd;
+}
+*/
