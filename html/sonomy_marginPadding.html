@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset ="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sonomy</title>
+  <link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body>
+  <div id="firstBlock">
+    <div class="contents">
+
+      <div id="header">
+        <p><a href="http://www.yahoo.co.jp/">Yahoo! JAPAN</a></p>
+      </div>
+
+      <div id="right">
+        <img class="title" src="images/img_pc/img_top_title.png" alt="app icon"/>
+        <img class="qrCode" src="images/img_common/qr_dlqr.gif" alt="QR code">
+        <a href="https://itunes.apple.com/app/apple-store/id905949622?mt=8">
+          <img class="appStore" src="images/img_pc/btn_dlapp_mid.png" alt="app store"></a>
+        </div>
+
+        <div id="left">
+          <img class="iPhone" src="images/img_pc/ipn_frame_mid_01.png" alt="iphonescreen"/>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="secondBlock">
+      <div class="contents">
+
+        <div id="center">
+          <img class="smallIcon" src="images/img_pc/icn_tent.png" alt ="hat">
+          <div id = "secondBlockText">
+            <h2>話題のグルメやイベントの情報をいち早くキャッチ</h2>
+            <p>あなたの住んでいる街、よく遊びに行く街の、</p>
+            <p>話題のグルメ、イベント、アウトドア、レジャー、映画、アートの情報はもちろん、</p>
+            <p>週末に行きたい癒しの旅や、美容の情報まで最新のトレンド情報を幅広くお届けします。</p>
+          </div>  
+        </div>
+
+        <div id="blocks1">
+          <img class="screens1" src= "images/img_common/card_exp_01.jpg">
+          <img class="screens1" src= "images/img_common/card_exp_02.jpg">
+          <img class="screens1" src= "images/img_common/card_exp_03.jpg">
+          <img class="screens1" src= "images/img_common/card_exp_04.jpg">
+
+        </div>
+      </div>
+    </div>
+
+    <div id="thirdBlock">
+      <div class="contents">
+
+        <div id = "blockText">
+          <p class="pinkText">トレンドニュース</p>
+          <p class="pinkText">人気のお店</p>
+          <p class="pinkText">最新のイベント</p>
+          <p class="pinkText">新作映画</p>
+        </div>
+
+        <div id="dropDownText">
+          <p id="greyText">Yahoo! Sonomyは、おでかけ情報をカードにしてお届けします。</p>
+          <p id=showCard onclick="showAndHideContent();">カードを全て見る</p> 
+        </div>
+
+        <div class="dropdown-content" id="blocks">
+          <img class="screens1" src= "images/img_common/card_exp_05.jpg">
+          <img class="screens1" src= "images/img_common/card_exp_06.jpg">
+          <img class="screens1" src= "images/img_common/card_exp_07.jpg">
+          <img class="screens1" src= "images/img_common/card_exp_08.jpg">
+          <br>
+        </div>
+
+        <div id="dropDown">
+          <script>
+          function showAndHideContent(){
+            var state = document.getElementById('blocks');
+            if (state.style.display == "block"){
+              state.style.display="none";
+            } else {
+              state.style.display="block";
+            }
+          }
+          </script>
+        </div>
+      </div>
+    </div>
+    
+    <div id="forthBlock">
+     <div class="contents">
+      <img class="smallIcon" src="images/img_pc/icn_search.png" alt ="hat">
+      <div id = "secondBlockText">
+        <h2>おでかけ先のお店やイベントをさくっと検索</h2>
+        <p>エリアを指定して、人気のお店や流行のイベントを検索することができます。</p>
+        <p>家を出る前、目的地に向かう電車の中で、周辺のことを調べてみましょう。</p>
+        <p>グルメ、イベントはもちろん、最新の映画やアートの情報も見つかります。</p>
+      </div>
+      
+      <div id="blocks1">
+        <img src="images/img_pc/ipn_frame_mid_02.png">
+        <img class="screens2" src= "images/img_pc/card_mid_01.jpg">
+        <img class="screens2" src= "images/img_pc/card_mid_02.jpg">
+        <img class="screens2" src= "images/img_pc/card_mid_03.jpg"> 
+      </div>  
+      
+    </div>
+  </div>
+</body>
+
+</html>

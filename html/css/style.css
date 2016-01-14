@@ -10,7 +10,6 @@ body {
 	background-color: #ebebeb;
 }
 
-
 * {
     box-sizing: border-box;
 }
@@ -85,8 +84,9 @@ img.appStore{
 	text-align: center;
 	padding: 0px 0px 30px 0px;
 }
-
 /*
+
+
 #secondBlock{
 	background-image: url("../images/img_pc/bg_img_01.jpg");
 	background-repeat: no-repeat;
@@ -106,6 +106,29 @@ p{
 	line-height: 20px;
 }
 
+img.smallIcon {
+	position: absolute;
+	top : 50px;
+	left : 450px;
+}
+
+
+#secondBlock.text{
+	margin:300px;
+}
+
+h2{
+    color:white;
+	text-align: center; 
+	padding-top: 120px;
+	font-weight : normal;
+}
+
+p{
+    color:white;
+	text-align: center;
+	line-height: 20px;
+}
 
 img.smallIcon {
 	position: absolute;
