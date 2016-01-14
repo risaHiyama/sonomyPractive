@@ -77,6 +77,7 @@ body {
 #secondBlock{
 	background-image: url("../images/img_pc/bg_img_01.jpg");
 	background-repeat: no-repeat;
+	height:510px;
 	background-size:cover;
 }
 
@@ -97,7 +98,7 @@ p{
 }
 
 .smallIcon {
-	padding: 100px 0px 50px 400px;
+	padding: 50px 0px 0px 400px;
 }
 
 #secondBlockText{
@@ -149,10 +150,9 @@ p.greyText{
     */
 }
 
-
-
 #forthBlock{
 	background-image: url("../images/img_pc/bg_img_02.jpg");
 	background-repeat: no-repeat;
 	background-size:cover;
+	height:510px;
 }
