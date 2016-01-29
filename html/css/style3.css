@@ -9,6 +9,10 @@ body {
 	background-color: #F2F2F2;
 }
 
+p, h1, h2, h3, a {
+	font-family: "ＭＳ ゴシック",sans-serif;
+}
+
 .contents{
 	padding: 0px 155px;
 	margin: 0px;
@@ -16,7 +20,9 @@ body {
 
 /*padding 上px、右px、下px、左px */
 
-/*firstBlock*/
+
+/* firstBlock
+------------------------------------ */
 #firstBlock{
 	position: relative;
     min-height: 635px;
@@ -25,18 +31,18 @@ body {
 	background-image:url("../images/img_pc/bg_top.jpg");	
 }
 
-/*yahooへのリンク*/
 #yahooLink {
 	padding: 50px 0px 0px 0px;
 
 }
-#yahooLink a{
+
+#firstBlock a{
 	border-color: rgba(205,92,92,0);
 	text-decoration: none;
 	color : white;
 }
 
-#yahooLink a:hover{
+#firstBlock a:hover{
 	border-bottom: 1px solid rgba(255,255,255,1);
 	transition: border-color 0.4s, color 0.4s;
 }
@@ -68,7 +74,9 @@ body {
 	width: 580px;
 }
 
-/*secondBlock*/
+/* second block
+------------------------------------ */
+
 #secondBlock{
 	background-image: url("../images/img_pc/bg_sora2.png");
 	position: relative;
@@ -179,7 +187,8 @@ p.greyText{
 	clear: both;
 }
 
-/** forthBlock **/
+/* forthBlock
+------------------------------------ */
 #forthBlock{
 	clear: both;
 	background-image: url("../images/img_pc/yuiko6.gif");
@@ -217,6 +226,9 @@ p.greyText{
 	margin: 50px 0px 0px 10px;
 }
 
+/* #sixthBlock
+------------------------------------ */
+
 #sixthBlock {
 	border: solid white 0.1px;
 	background-image: url("../images/img_pc/greenTrain.gif");
@@ -246,11 +258,14 @@ p.greyText{
 .smallIcon {
 	display: table-cell;
 	vertical-align: middle;
+	table-layout: fixed;
 	margin: auto;
 	clear:both;
 	padding: 3px 0px 0px 10px;
 }
 
+/* seventhBlock
+------------------------------------ */
 #seventhBlock ul {
 	list-style-type: none;
 }
@@ -269,6 +284,8 @@ li a {
     text-decoration: none;
 }
 
+/* eithBlock
+------------------------------------ */
 #eithBlock {
 	clear: both;
 	background-image: url("../images/img_pc/temple.gif");
@@ -277,14 +294,6 @@ li a {
 	border: solid white 0.1px;
 }
 
-#footerImage{
-	margin: 100px 0px 0px 50px;
-}
-
-#appStore{
-	float: center;
-	margin: 0px 0px 40px 43px;
-}
 
 h2.greyTitle{
 	color: #555555;
@@ -294,11 +303,17 @@ h2.greyTitle{
 #eithBlockText{
 	color: white;
 	position: relative;
-	top: 330px;
-	left: 405px;
+	top: 250px;
+	left: 360px;
 }
 
-/** footer **/
+#appStore{
+	float: center;
+	margin: 0px 0px 40px 43px;
+}
+
+/* footer
+------------------------------------ */
 #footer {
 	position: relative;
 }
