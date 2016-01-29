@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ja">
+   <head>
+      <meta charset ="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Sonomy</title>
+      <link rel="stylesheet" href="css/style3.css">
+      <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+   </head>
+   <body>
+      <div id="firstBlock">
+         <div class="contents">
+            <!--JSのテスト
+               <p class="indicator">スクロール値 | <span id="scrollValue">0</span></p>
+               -->
+            <a href="http://www.yahoo.co.jp/">Yahoo! JAPAN</a>
+            <div class="center" id="left">
+               <img class="title" src="images/img_pc/title.png" alt="app icon"/>
+            </div>
+            <div id="right">
+               <img class="headerIphone" src="images/img_pc/iphoneScreen.png" alt="iPhone Screens"/>
+            </div>
+         </div>
+      </div>
+      <div id="secondBlock">
+         <!--JSで動かしたい部分-->
+         <div id="moveDown">
+            <img id="floatingImage" src="images/img_pc/floatingImage2.png" alt="iPhone Screens"/>
+         </div>
+         <script>
+            $(function() {
+             $(window).scroll(function() {
+              var value = $(this).scrollTop();  //スクロール値を取得
+              $('#scrollValue').text(value);
+             });
+            }); 
+            
+            $(function() {
+            var top = $('#moveDown').offset().top;  //y座標の初期値を取得
+            
+            $(window).scroll(function() {
+            var value = $(this).scrollTop();//スクロールの値を取得
+              $('#scrollValue').text(value);
+              //取得したスクロール値を矩形のY座標値に指定
+              //スクロール値を除算して移動距離に変化をつける
+              $('#moveDown').css('top', top - 640 - value / 2);
+            });
+            });
+         </script>
+         <!--JSで動かしたい部分-->
+         <div class="contents">
+            <div id="center">
+               <h2 style="opacity: 1;">話題のグルメやイベントの情報を<br>いち早くキャッチ</h2>
+            </div>
+         </div>
+      </div>
+      <div id="thirdBlock">
+         <div class="contents">
+            <div id="boxOfScreens">
+               <ul>
+                  <li>
+                     <img class="shadow" src= "images/img_common/card_exp_01.jpg">
+                     <p class="pinkText">トレンドニュース</p>
+                     <p class="discription">最新スイーツの情報、新しいショップのオープン情報など、見逃せない最新トレンドニュースをお届けします。</p>
+                  </li>
+                  <li>
+                     <img class="shadow" src= "images/img_common/card_exp_02.jpg">
+                     <p class="pinkText">人気のお店</p>
+                     <p class="discription">数あるお店の中から、人気のお店だけを厳選してお届けします。</p>
+                  </li>
+                  <li>
+                     <img class="shadow" src= "images/img_common/card_exp_03.jpg">
+                     <p class="pinkText">最新のイベント</p>
+                     <p class="discription">近くの、よく行く場所の最新のイベント情報をお届けします。</p>
+                  </li>
+                  <li>
+                     <img class="shadow" src= "images/img_common/card_exp_04.jpg">
+                     <p class="pinkText">新作映画</p>
+                     <p class="discription">話題の映画を近くの映画館の上映スケジュールと共にお届けします。</p>
+                  </li>
+               </ul>
+            </div>
+            <div class="dropdown-content" id="dropDownblocks">
+               <ul>
+                  <li><img class="shadow" src= "images/img_common/card_exp_05.jpg"></li>
+                  <li><img class="shadow" src= "images/img_common/card_exp_06.jpg"></li>
+                  <li><img class="shadow" src= "images/img_common/card_exp_07.jpg"></li>
+                  <li><img class="shadow" src= "images/img_common/card_exp_08.jpg"></li>
+               </ul>
+            </div>
+            <script>
+               function showAndHideContent(){
+                 var state = document.getElementById('dropDownblocks');
+                 if (state.style.display == "block"){
+                   state.style.display="none";
+                 } else {
+                   state.style.display="block";
+                 }
+               }
+            </script>
+            <p class="greyText">Yahoo! Sonomyは、おでかけ情報をカードにしてお届けします。</p>
+            <p id="showBlockBlueText" onclick="showAndHideContent();">カードを全て見る</p>
+         </div>
+      </div>
+      <div id="forthBlock">
+         <div class="contents">
+            <h2 style="opacity: 1;">お出かけ先のお店やイベントを<br>サクッと検索</h2>
+         </div>
+      </div>
+      <div id="fithBlock">
+         <div class="contents">
+            <div id="boxOfScreens2">
+               <ul>
+                  <li><img src= "images/img_pc/ipn_frame_mid_02.png">
+                  <li>
+                     <img id="shadow-margin" src= "images/img_pc/card_mid_01.jpg">
+                     <p class="pinkText">人気のお店</p>
+                  </li>
+                  <li>
+                     <img id="shadow-margin" src= "images/img_pc/card_mid_02.jpg">
+                     <p class="pinkText">最新アート情報</p>
+                  </li>
+                  <li>
+                     <img id="shadow-margin" src= "images/img_pc/card_mid_03.jpg">
+                     <p class="pinkText">最新の映画</p>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div id="sixthBlock">
+         <div class="contents">
+            <h2 style="opacity: 1;">行きたいところを「見つける」から「行く」までサポート</h2>
+         </div>
+      </div>
+      <div id="seventhBlock">
+         <div class="contents">
+            <ul>
+               <li>
+                  <img class= "smallIcon" src="images/img_pc/heart.png" alt ="heart">
+                  <h3 class="greyTitle">使うほどあなた好みに進化</h3>
+                  <p class="discription2">カードを右にめくると「興味がある」左にめくると「興味がない」使えば使うほどアプリがあなたを理解して、「行きたい！」と思うものを多くお届けできるようになります。</p>
+                  <img id="box3_shadow_margin" src= "images/img_pc/parts-12.png">
+               </li>
+               <li>
+                  <img  class= "smallIcon" src="images/img_pc/bell.png" alt ="bell">
+                  <h3 class="greyTitle">気になる情報はリストに保存</h3>
+                  <p class="discription2">気になるカードは1タップでアプリに保存することができます。保存したカードは、イベントの開催日や新しいお店のオープン前日にプッシュ通知でお知らせします。</p>
+                  <img id="box3_shadow_margin" src= "images/img_pc/parts-13.png">
+               </li>
+               <li>
+                  <img  class= "smallIcon" src="images/img_pc/notes.png" alt ="notes">
+                  <h3 class="greyTitle">大切なお知らせをプッシュ通知</h3>
+                  <p class="discription2">雨が降るとき、電車が止まったとき、行きたい！と言っていたイベントの開催日、あなたが興味のありそうなカードが見つかったとき。大切な情報だけを通知します。</p>
+                  <img id="box3_shadow_margin" src= "images/img_pc/parts-14.png">
+               </li>
+            </ul>
+         </div>
+      </div>
+      <div id="eithBlock">
+         <div class="contents">
+           <h3 id="eithBlockText" >今すぐアプリをダウンロードしよう！</h3>
+            <img  id= "footerImage" src= 
+               "images/img_pc/ipn_frame_mid_03.png">
+            <a href="https://itunes.apple.com/app/apple-store/id905949622?mt=8">
+            <img id="appStore" src="images/img_pc/btn_dlapp_mid.png" alt="app store"></a>
+         </div>
+      </div>
+      <div id="footer">
+         <div class="contents">
+            <p id="goTopText"><a href="#firstBlock">トップに戻る</a></p>
+            <img id="balloon" src="images/img_pc/icn_baroon.png" alt="go to the top">
+            <ul class="copyRightInfo">
+               <li>「App Store」ボタンを押すとiTunes（外部サイト）が起動します。</li>
+               <li>Apple、Appleのロゴ、App Store、iPodのロゴ、iTunesは、米国および他国のApple Inc.の登録商標です。</li>
+               <li>iPhone、iPod touchはApple Inc.の商標です。 </li>
+               <li> iPhone商標は、アイホン株式会社のライセンスに基づき使用されています。</li>
+               <li>Copyright (C) 2014 Apple Inc. All rights reserved. </li>
+               <li>写真：アフロ </li>
+            </ul>
+            <div id="footerLinks">
+               <p color="#0090ff"> <a href="http://www.yahoo.co.jp/">Yahoo! JAPAN</a></p>
+               <p> <a href="http://docs.yahoo.co.jp/docs/info/terms/chapter1.html#cf2nd">プライバシーポリシー </a>-<a href="http://docs.yahoo.co.jp/docs/info/terms/"> 利用規約 </a>-<a href="http://www.yahoo-help.jp/"> ヘルプ・お問い合わせ </a></p>
+               <p>Copyright (C) 2015 Yahoo Japan Corporation. All Rights Reserved.</p>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
