@@ -13,7 +13,7 @@
             <!--JSのテスト
                <p class="indicator">スクロール値 | <span id="scrollValue">0</span></p>
                -->
-            <a href="http://www.yahoo.co.jp/">Yahoo! JAPAN</a>
+            <div id="yahooLink"><a href="http://www.yahoo.co.jp/">Yahoo! JAPAN</a></div>
             <div class="center" id="left">
                <img class="title" src="images/img_pc/title.png" alt="app icon"/>
             </div>
@@ -43,7 +43,7 @@
               $('#scrollValue').text(value);
               //取得したスクロール値を矩形のY座標値に指定
               //スクロール値を除算して移動距離に変化をつける
-              $('#moveDown').css('top', top - 640 - value / 2);
+              $('#moveDown').css('top', top - 650 - value / 2);
             });
             });
          </script>
@@ -99,7 +99,7 @@
                }
             </script>
             <p class="greyText">Yahoo! Sonomyは、おでかけ情報をカードにしてお届けします。</p>
-            <p id="showBlockBlueText" onclick="showAndHideContent();">カードを全て見る</p>
+            <p id="showBlockBlueText" onclick="showAndHideContent();"><span id="showHideCard">▲カードを全て見る</span></p>
          </div>
       </div>
       <div id="forthBlock">
@@ -138,19 +138,19 @@
             <ul>
                <li>
                   <img class= "smallIcon" src="images/img_pc/heart.png" alt ="heart">
-                  <h3 class="greyTitle">使うほどあなた好みに進化</h3>
+                  <h2 class="greyTitle">使えば使うほど<br>あなた好みに進化</h2>
                   <p class="discription2">カードを右にめくると「興味がある」左にめくると「興味がない」使えば使うほどアプリがあなたを理解して、「行きたい！」と思うものを多くお届けできるようになります。</p>
                   <img id="box3_shadow_margin" src= "images/img_pc/parts-12.png">
                </li>
                <li>
                   <img  class= "smallIcon" src="images/img_pc/bell.png" alt ="bell">
-                  <h3 class="greyTitle">気になる情報はリストに保存</h3>
+                  <h2 class="greyTitle">気になる情報は<br>行きたいリストに保存</h2>
                   <p class="discription2">気になるカードは1タップでアプリに保存することができます。保存したカードは、イベントの開催日や新しいお店のオープン前日にプッシュ通知でお知らせします。</p>
                   <img id="box3_shadow_margin" src= "images/img_pc/parts-13.png">
                </li>
                <li>
                   <img  class= "smallIcon" src="images/img_pc/notes.png" alt ="notes">
-                  <h3 class="greyTitle">大切なお知らせをプッシュ通知</h3>
+                  <h2 class="greyTitle">大切なお知らせを<br>プッシュ通知</h2>
                   <p class="discription2">雨が降るとき、電車が止まったとき、行きたい！と言っていたイベントの開催日、あなたが興味のありそうなカードが見つかったとき。大切な情報だけを通知します。</p>
                   <img id="box3_shadow_margin" src= "images/img_pc/parts-14.png">
                </li>

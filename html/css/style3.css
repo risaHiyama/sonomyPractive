@@ -19,28 +19,32 @@ body {
 /*firstBlock*/
 #firstBlock{
 	position: relative;
-    min-height: 642px;
+    min-height: 635px;
 	background-position:center top; 
 	background-repeat:no-repeat;
 	background-image:url("../images/img_pc/bg_top.jpg");	
 }
 
 /*yahooへのリンク*/
-#firstBlock a{
-	padding: 50px 0px;
-	color: white;
-	float: right;
+#yahooLink {
+	padding: 50px 0px 0px 0px;
+
+}
+#yahooLink a{
+	border-color: rgba(205,92,92,0);
 	text-decoration: none;
+	color : white;
 }
 
-#firstBlock a:hover {
- 	text-decoration: underline;
+#yahooLink a:hover{
+	border-bottom: 1px solid rgba(255,255,255,1);
+	transition: border-color 0.4s, color 0.4s;
 }
 
 #left{
 	width: 350px;
 	height: 500px;
-	padding: 100px 20px 0 48px;
+	padding: 0px 20px 0 48px;
 }
 
 #right{
@@ -60,7 +64,7 @@ body {
 
 .headerIphone{
 	position: absolute;
-	top:148px;
+	top: 140px;
 	width: 580px;
 }
 
@@ -129,6 +133,10 @@ p.discription{
 	width: 210px;
 }
 
+p.discription2{
+	color: dimgrey;
+}
+
 ul {
     list-style-type: none;
 }
@@ -154,11 +162,17 @@ p.greyText{
 }
 
 #showBlockBlueText{
+	border-color: rgba(205,92,92,0);
 	float: right;
 	margin: 0xp 0px 0px 100px;
 	padding: 0px 0px 0px 0px;
 	text-align: right;
 	color: dodgerblue;
+}
+
+#showBlockBlueText:hover{
+
+	text-decoration: underline;
 }
 
 #dropDownblocks{
@@ -272,8 +286,8 @@ li a {
 	margin: 0px 0px 40px 43px;
 }
 
-h3.greyTitle{
-	color: darkgrey;
+h2.greyTitle{
+	color: #555555;
 	font-weight : normal;
 }
 
@@ -317,10 +331,18 @@ h3.greyTitle{
 }
 
 #footer a{
+	border-color: rgba(205,92,92,0);
 	text-align: center;
     color: #0090ff;
 	text-decoration: none;
 }
+
+#footer a:hover{
+	/** ふわっとtransitionを使ってエフェクト **/
+	border-bottom: 1px solid rgba(0,153,255,1);
+	transition: border-color 0.4s, color 0.4s;
+}
+
 #footer p{
 	color: #888888;
 }
