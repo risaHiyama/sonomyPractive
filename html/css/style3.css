@@ -47,31 +47,17 @@ p, h1, h2, h3, a {
 	transition: border-color 0.4s, color 0.4s;
 }
 
-#left{
-	width: 350px;
-	height: 500px;
-	padding: 0px 20px 0 48px;
-}
-
-#right{
-	position: absolute;
-	width: 642px;
-	height: 644px;
-    top: 0px;
-    left: 50%;
-    overflow: hidden;
-}
 
 .title{
-	display: inline-block;
+	float: left;
+	border: red 1px solid;
 	width: 330px;
-	margin: 165px 0px 0px 0px;
+	margin: 200px 50px 0px 0px;
 }
 
 .headerIphone{
-	position: absolute;
-	top: 140px;
 	width: 580px;
+	margin: 75px 0px 0px 0px;
 }
 
 /* second block
@@ -97,7 +83,7 @@ p, h1, h2, h3, a {
 **/
 
 #floatingImage{
-	width : 100%;
+	width : 1300px;
 }
 
 #moveDown{
