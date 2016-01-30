@@ -50,7 +50,6 @@ p, h1, h2, h3, a {
 
 .title{
 	float: left;
-	border: red 1px solid;
 	width: 330px;
 	margin: 200px 50px 0px 0px;
 }
