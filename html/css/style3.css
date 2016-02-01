@@ -14,6 +14,7 @@ p, h1, h2, h3, a {
 }
 
 .contents{
+	table-layout: fixed;
 	padding: 0px 155px;
 	margin: 0px;
 }
@@ -122,6 +123,18 @@ p, h1, h2, h3, a {
 
 /** js scroll **/
 
+#secondText {
+	background-color: rgba( 255, 255, 255, 0.75 );
+    color: #333333;
+	margin: 30px 30px;
+	padding: 30px 30px;
+	font-weight : normal;
+	position: absolute;
+	top: 90px;
+	right: 100px;
+	
+}
+/**
 #secondBlock h2{
 	background-color: rgba( 255, 255, 255, 0.75 );
     color: #333333;
@@ -132,6 +145,7 @@ p, h1, h2, h3, a {
 	top: 140px;
 	right: 100px;
 }
+**/
 
 #boxOfScreens{
 	display: inline-block;
@@ -217,16 +231,16 @@ p.greyText{
    min-width: 1060px;
    padding: 40px 16px;
 }
-	
-#forthBlock h2{
+
+#forthText{
 	position: relative;
 	background-color: rgba( 255, 255, 255, 0.75 );
     color: #333333;
-	margin: 0px 0px 270px 0px;
-	padding: 30px 30px;
-	width:350px;
+	margin: 0px 0px 260px 0px;
+	padding: 20px 40px;
 	font-weight : normal;
 	top: 120px;
+	max-width:480px;
 }
 
 /** iPhoneのスクリーンの影 **/
@@ -266,25 +280,23 @@ p.greyText{
 	width: 175px;
 	display: table-cell;
 	vertical-align: middle;
-	margin: auto;
+	margin: 40px auto 0px auto;
 }
 
 .smallIcon {
-	display: table-cell;
-	vertical-align: middle;
-	table-layout: fixed;
-	margin: auto;
-	clear:both;
-	padding: 3px 0px 0px 10px;
+	display: block;
+    margin: 0 auto;
 }
 
 /* seventhBlock
 ------------------------------------ */
 #seventhBlock ul {
+	table-layout: fixed;
 	list-style-type: none;
 }
 
 #seventhBlock li {
+	table-layout: fixed;
 	margin: 50px 0px 60px 30px;
 	width: 270px;
 }
@@ -307,7 +319,6 @@ li a {
 	background-repeat: no-repeat;
 	border: solid white 0.1px;
 }
-
 
 h2.greyTitle{
 	color: #555555;
