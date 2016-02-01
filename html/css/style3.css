@@ -121,7 +121,9 @@ p, h1, h2, h3, a, li, ul {
 }
 
 /** js scroll **/
-
+h2 {
+	font-weight : normal;
+}
 #secondText {
 	background-color: rgba( 255, 255, 255, 0.75 );
     color: #333333;
@@ -133,18 +135,6 @@ p, h1, h2, h3, a, li, ul {
 	right: 100px;
 	
 }
-/**
-#secondBlock h2{
-	background-color: rgba( 255, 255, 255, 0.75 );
-    color: #333333;
-	margin: 30px 30px;
-	padding: 30px 30px;
-	font-weight : normal;
-	position: absolute;
-	top: 140px;
-	right: 100px;
-}
-**/
 
 #boxOfScreens{
 	display: inline-block;
@@ -232,6 +222,7 @@ p.greyText{
 }
 
 #forthText{
+	font-weight : normal;
 	position: relative;
 	background-color: rgba( 255, 255, 255, 0.75 );
     color: #333333;
