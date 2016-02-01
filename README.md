@@ -1,6 +1,11 @@
-# sonomyPractive
-sonomyの事前課題：sonomyのページの改善案を作る
-目標：
-1.JSにチャレンジする！
-2.レシポンシブにする
-3.スッキリしているコードを書く
+<snippet>
+<content><![CDATA[
+# ${1:Sonomy Practice}
+TODO:CSS HTMLタグやCSSなどの基礎知識を理解
+## 目標
+1. JSにチャレンジし、サイトに動きを加える
+2. レスポンシブにする
+3. スッキリしているコードを書く
+]]></content>
+<tabTrigger>readme</tabTrigger>
+</snippet>
